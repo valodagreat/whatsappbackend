@@ -38,6 +38,8 @@ pusher();
 app.use('/api/v1',message);
 app.use('/whatsapp',room);
 
+app.get('/', (req, res) =>res.send('it is working'))
+
 const port = process.env.PORT || 9000
 
 app.listen(port, () => {
