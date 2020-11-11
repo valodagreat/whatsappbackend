@@ -1,5 +1,5 @@
 const express = require('express');
-const dotenv = require('dotenv');
+//const dotenv = require('dotenv');
 const db = require('./config/db');
 const mongoSanitize = require('express-mongo-sanitize')
 const helmet = require('helmet');
@@ -12,7 +12,7 @@ const message = require('./routes/Messages')
 const room = require('./routes/Room');
 
 const app = express();
-dotenv.config({path : './config/config.env'});
+//dotenv.config({path : './config/config.env'});
 
 db();
 
