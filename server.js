@@ -40,8 +40,8 @@ app.use('/whatsapp',room);
 
 app.get('/', (req, res) =>res.send('it is working'))
 
-const port = process.env.PORT || 9000
+const PORT = process.env.PORT || 3005;
 
-app.listen(process.env.PORT, () => {
+app.listen(PORT, () => {
     console.log(`App listening on port ${port}!`.yellow);
 });
