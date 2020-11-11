@@ -13,7 +13,7 @@ const db = mongoose.connection
 
 exports.pusher = () => {
     db.once('open', () => {
-    console.log("Database connected".cyan);
+    console.log("Database connected");
 
     const roomcollection = db.collection('rooms');
 
@@ -28,7 +28,7 @@ exports.pusher = () => {
                 _id : roomdetails._id,
             });
         }else{
-            console.log("Error triggering pusher".red)
+            console.log("Error triggering pusher")
         }
     })
 
@@ -48,7 +48,7 @@ exports.pusher = () => {
                 _id : msgdetails._id,
             });
         }else{
-            console.log("Error triggering pusher".red)
+            console.log("Error triggering pusher")
         }
     })
 })

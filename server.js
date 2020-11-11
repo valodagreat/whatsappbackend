@@ -6,7 +6,6 @@ const helmet = require('helmet');
 const xss = require('xss-clean');
 const hpp = require('hpp');
 const cors = require('cors');
-const colors = require('colors');
 const {pusher} =require('./middlewares/pusher')
 const message = require('./routes/Messages')
 const room = require('./routes/Room');
@@ -43,5 +42,5 @@ app.get('/', (req, res) =>res.send('it is working'))
 const PORT = process.env.PORT || 3005;
 
 app.listen(PORT, () => {
-    console.log(`App listening on port ${port}!`.yellow);
+    console.log(`App listening on port ${port}!`);
 });
