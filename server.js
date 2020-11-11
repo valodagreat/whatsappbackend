@@ -42,5 +42,5 @@ app.get('/', (req, res) =>res.send('it is working'))
 const PORT = process.env.PORT || 3005;
 
 app.listen(PORT, () => {
-    console.log(`App listening on port ${port}!`);
+    console.log(`App listening on port ${PORT}!`);
 });
